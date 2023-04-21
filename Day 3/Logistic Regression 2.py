@@ -43,7 +43,6 @@ plt.tight_layout()
 plt.show()
 
 # Create a heatmap of the confusion matrix
-names = ['True Similar','False Similar', 'False Different','True Different']
 categories = ['Benign','Malignant']
 sns.heatmap(confusion, annot=True, fmt='d', cmap='Blues', xticklabels = categories, yticklabels = categories)
 plt.xlabel('Predicted')
